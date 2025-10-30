@@ -12,26 +12,24 @@ This project include :
 This also includes explanations of the **logit function**, **sigmoid function**, which is useful for learning logistic regression fundamentals.
 
 # Background / Theory
-### Logit Function 
-This Logit function is nothing but log of odds (how much more likely success is than failure). it Maps (0,1) → (-∞, ∞) → now we can model it linearly with any real-valued features.
+### Logit(p) - log of odds (how much more likely success is than failure). 
 
+Linear relationship:
+- We want a model that relates features x linearly to the target(y).
+- But probabilities p∈(0,1) can’t be modeled linearly — they’re bounded.
+- So we apply a transformation that stretches probabilities into the real line (−∞,∞)
+- Apllying Log to the Odds Makes it Symmetric: if odds = 0.5 → log-odds = -0.693; if odds = 2 → log-odds = 0.693.​
 
-Why log of odds?
-- Probabilities are bounded: 0<p<1.
-- Linear models require outputs on −∞→+∞ scale.
-- Log-odds (logit) transforms probability to an unbounded scale.
-- Makes it Symmetric: if odds = 0.5 → log-odds = -0.693; if odds = 2 → log-odds = 0.693.​
 
 $$
 \text{logit(p)} = \frac{p}{1-p}
 $$
 
 Here:
-
 - Probability of positive class: p = P(y=1∣X).
 - Probability of negative class: 1−p = P(y=0∣X).
 
-Makes the relationship linear in features:
+It Makes the relationship linear in features:
 
 $$
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right) = z = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_n
