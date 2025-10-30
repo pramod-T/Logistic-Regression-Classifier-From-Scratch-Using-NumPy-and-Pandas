@@ -1,5 +1,5 @@
 # Logistic Regression Classifier From Scratch Using Python Numpy and Pandas
-Classic Logistic Regression is a Supervised Machine learnign algoritm used for binary classification, where the goal is to predict the probability of an outcome belonging to one of two classes. Unlike linear regression, which predicts continuous values, 
+Classic Logistic Regression is a Supervised Machine learning algorithm used for binary classification, where the goal is to predict the probability of an outcome belonging to one of two classes. Unlike linear regression, which predicts continuous values, 
 logistic regression models the **log-odds of the probability** as a linear combination of input features and then maps it through a **sigmoid function** to ensure 
 the output lies between 0 and 1. The model is trained by **minimizing the binary cross-entropy (log loss)** using gradient descent, and predictions are made by 
 applying a threshold to the probability. It is widely used due to its simplicity, interpretability, and effectiveness in many classification tasks.
