@@ -18,7 +18,7 @@ Linear relationship:
 - We want a model that relates features x linearly to the target(y).
 - But probabilities p∈(0,1) can’t be modeled linearly — they’re bounded.
 - So we apply a transformation that stretches probabilities into the real line (−∞,∞)
-- Apllying Log to the Odds Makes it Symmetric: if odds = 0.5 → log-odds = -0.693; if odds = 2 → log-odds = 0.693.​
+- Applying Log to the Odds Makes it Symmetric: if odds = 0.5 → log-odds = -0.693; if odds = 2 → log-odds = 0.693.​
 
 
 $$
