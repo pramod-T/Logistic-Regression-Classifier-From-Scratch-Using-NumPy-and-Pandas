@@ -82,6 +82,20 @@ Map the probabilities into classes.
 
 prediction class y = { 0 if p < 0.5 else 1 } 
 
+## How to Run
+1. Clone the repository
+```
+git clone https://github.com/pramod-T/Logistic-Regression-Classifier-From-Scratch-Using-NumPy-and-Pandas.git
+```
+2. Install requirements
+```
+pip install numpy pandas 
+```
+3. Run the script
+```
+python Logistic_Regression.py
+```
+
 ## Performance
 
 - Accuracy = 0.706
